@@ -24,12 +24,11 @@ jobs:
           java-version: 17
 
       - name: SonarQube Scan
-        uses: SonarSource/sonarqube-scan-action@v1.1.0
+        uses: SonarSource/sonarqube-scan-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-          JAVA_HOME: ${{ env.JAVA_HOME }}  # ensures scanner uses Java 17
         with:
           args: >
             -Dsonar.projectKey=PatriotArrow_frontend-react
