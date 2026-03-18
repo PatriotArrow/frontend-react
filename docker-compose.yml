@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  frontend:
+    image: patriotarrow/lms-frontend:2.0.0  # or use your Docker Hub username
+    ports:
+      - "80:80"
+    environment:
+      - REACT_APP_API_URL=http://34.56.114.125:4000
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
