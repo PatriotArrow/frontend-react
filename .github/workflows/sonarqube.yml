@@ -32,5 +32,5 @@ jobs:
           JAVA_HOME: ${{ env.JAVA_HOME }}  # ensures scanner uses Java 17
         with:
           args: >
-            -Dsonar.projectKey=PatriotArrow_frontend-react  # change to backend repo key in backend repo
+            -Dsonar.projectKey=PatriotArrow_frontend-react
             -Dsonar.sources=.
