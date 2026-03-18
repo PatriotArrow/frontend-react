@@ -35,4 +35,7 @@ jobs:
         with:
           args: >
             -Dsonar.projectKey=PatriotArrow_frontend-react
+            -Dsonar.organization=YOUR_ORG_KEY
             -Dsonar.sources=.
+
+            
